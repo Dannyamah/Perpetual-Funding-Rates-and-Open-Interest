@@ -125,6 +125,15 @@ with st.sidebar:
     - **Red**: Bearish (Funding > 0.01%)  
     """, unsafe_allow_html=True)
 
+    # ---- Footer ----
+    st.markdown("---")
+    st.markdown(
+        "🔨 Built by [@Daddy Brian](https://x.com/seniormanfm) "
+        "and [@Daniel Amah](https://x.com/danny_4reel)",
+        unsafe_allow_html=True,
+    )
+
+
 # ---- Funding Table ----
 funding_table = df_best.pivot_table(
     index="token",
